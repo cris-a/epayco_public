@@ -1,4 +1,4 @@
-import { ConflictException, Injectable, HttpException, HttpStatus } from "@nestjs/common";
+import { Injectable, HttpException, HttpStatus } from "@nestjs/common";
 import { CreateUserDo } from "./dto/Client.dto";
 import { HttpService } from "@nestjs/axios";
 import { firstValueFrom } from "rxjs";

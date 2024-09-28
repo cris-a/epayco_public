@@ -1,8 +1,6 @@
 import { Controller, Post, Body, UsePipes,
     ValidationPipe, HttpCode, HttpStatus,
-    HttpException,
-    Headers} from "@nestjs/common";
-import { HttpService } from "@nestjs/axios";
+    HttpException} from "@nestjs/common";
 import { CreateUserDo } from "./dto/Client.dto";
 import { ClientService } from "./client.service";
 import { LoginDto } from "./dto/Login.dto";
