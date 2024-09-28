@@ -51,15 +51,9 @@ cd virtual-wallet-api</code>
 
   <li>Configura las variables de entorno en un archivo <strong>.env</strong>:
       <pre>
-        <code>MONGO_URI=mongodb://localhost:27017/walletDB
-
-      JWT_SECRET=your_jwt_secret
-      EMAIL_HOST=your_host
-      EMAIL_USERNAME=your_email_user
-      EMAIL_PASSWORD=your_email_pass</code>
+        <code>
       PORT=your_port
       CORS_ORIGIN=your_url
-
 </pre>
 </li>
 
