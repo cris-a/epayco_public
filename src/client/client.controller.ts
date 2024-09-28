@@ -4,7 +4,9 @@ import { Controller, Post, Body, UsePipes,
 import { CreateUserDo } from "./dto/Client.dto";
 import { ClientService } from "./client.service";
 import { LoginDto } from "./dto/Login.dto";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags('Client')
 @Controller('clients')
 export class ClientController {
     constructor(public readonly clientService: ClientService) {}

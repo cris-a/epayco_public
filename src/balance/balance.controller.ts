@@ -4,7 +4,9 @@ import { Controller, Post, Body, UsePipes,
 import { BalanceService } from "./balance.service";
 import { RecargaDto } from "./dto/Recarga.dto";
 import { BalanceDto } from "./dto/Balance.dto";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags('Balance')
 @Controller('balance')
 export class BalanceController {
     constructor(public readonly balanceService: BalanceService) {}

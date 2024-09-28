@@ -4,7 +4,9 @@ import { Controller, Post, Body, UsePipes,
 import { PaymentService } from "./payment.service";
 import { PaymentDto } from "./dto/Payment.dto";
 import { ConfirmDto } from "./dto/Confirm.dto";
+import { ApiTags, ApiBearerAuth } from "@nestjs/swagger";
 
+@ApiTags('Payments')
 @Controller('payment')
 export class PaymentController {
     constructor(public readonly paymentService:PaymentService) {}
@@ -26,7 +28,7 @@ export class PaymentController {
          throw new HttpException('Error al comunicarse con la api', HttpStatus.INTERNAL_SERVER_ERROR);
         }
      }
-
+    @ApiBearerAuth()
     @Post('confirm-payment')
     @HttpCode(200)
     @UsePipes(new ValidationPipe())
