@@ -30,16 +30,13 @@
   <ul>
     <li>Node.js (v14 o superior)</li>
     <li>NestJS (v8 o superior)</li>
-    <li>MongoDB</li>
-    <li>Herramienta de envío de correos (p.ej. SMTP, Mailtrap)</li>
   </ul>
 
   <h2>Instalación</h2>
   <ol>
     <li>Clona este repositorio:
       <pre>
-        <code>git clone https://github.com/tu-usuario/virtual-wallet-api.git
-cd virtual-wallet-api</code>
+        <code>git clone https://github.com/cris-a/epayco_public.git</code>
       </pre>
     </li>
 
